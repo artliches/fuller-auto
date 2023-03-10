@@ -9,7 +9,6 @@ $orchid: #C252E1;
     place-content: center;
     max-width: 95%;
     margin: auto;
-    padding-bottom: 1rem;
     h1 {
         &.app-title {
             display: grid;
@@ -26,6 +25,7 @@ $orchid: #C252E1;
             letter-spacing: 0.5rem;
         }
         .overlay-title {
+            text-shadow: 1px 1px 10px black, 2px 2px 20px white;
             opacity: 0.99;
             font-size: 1vmax;
             grid-column: 1;
@@ -37,6 +37,15 @@ $orchid: #C252E1;
     }
     .card {
         padding: 1rem;
+    }
+    .footer {
+        margin-bottom: 1rem;
+        display: grid;
+        grid-gap: 1rem;
+        .legal {
+            font-size: 0.8rem;
+            place-self: center;
+        }
     }
     .theme-shuffle {
         width: min-content;

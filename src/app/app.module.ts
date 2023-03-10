@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GlitchHeaderComponent } from './glitch-header/glitch-header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GlitchHeaderComponent
   ],
   imports: [
     BrowserModule,
