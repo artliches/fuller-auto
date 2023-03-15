@@ -15,7 +15,7 @@ $dark-blue: #00109F;
 
     .main-content {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         grid-gap: 1rem;
         place-content: center;
     }
@@ -30,11 +30,10 @@ $dark-blue: #00109F;
         border: 1px solid black;
         border-right: 5px solid black;
         border-bottom: 5px solid black;
+        display: grid;
+        grid-template-rows: min-content 1fr;
         &.legal {
             font-size: 0.5rem;
-        }
-        &.long-card {
-            grid-column: span 3;
         }
         .card-header,.card-body {
             padding: 0.5rem;
@@ -47,6 +46,16 @@ $dark-blue: #00109F;
         .card-body {
             color: black;
             background-color: white;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .main-content {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .card {
+            &.long-card {
+                grid-column: span 3;
+            }
         }
     }
 }
